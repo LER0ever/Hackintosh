@@ -19,3 +19,6 @@ Notice:
   
 
 # Enjoy Hackintosh!  
+
+### Some Screenshots
+
