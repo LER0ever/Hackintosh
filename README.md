@@ -6,9 +6,14 @@
 My PC Config: Samsung 450r5j (Intel-i5-haswell HD4400 nVidia820(no driver) SynapticsTouchPad)  
 If your PC hardware is similar to mine, you may try this entire collecion. But I do not promise your success.  
 
-### The drivers in this repo has all been customized! If there is a same file in S/L/E, REPLACE it!
+### The drivers in this repo have all been customized! If there is a same file in S/L/E, REPLACE it!  
+  
+###About these files:
+ - 360wifi: The wireless driver for DuWifi, 360 wifi 2nd generation only
+ - Intel-HD4400: The Graphics driver for Intel HD4400, for 10.10.5
+ - DSDT: The necessary dsdt injection code
 
-Notice:
+###Notice:
  - Configuring Hackintosh on PC need far more time than configuring Linux, So **Keep Patient**.
  - AMD CPU Users usually have little luck on Hackintosh
  - **DSDT injection may not work on a different hardware**, so use with caution.
