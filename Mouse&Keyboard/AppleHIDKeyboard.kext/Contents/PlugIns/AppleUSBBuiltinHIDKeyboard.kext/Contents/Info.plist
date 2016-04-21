@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>14F21</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>AppleUSBBuiltinHIDKeyboard</string>
+	<key>CFBundleGetInfoString</key>
+	<string>176.2</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.driver.AppleUSBBuiltinHIDKeyboard</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>AppleUSBBuiltinHIDKeyboard</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>176.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>176.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>6D543f</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>14E40</string>
+	<key>DTSDKName</key>
+	<string>macosx10.10internal</string>
+	<key>DTXcode</key>
+	<string>0630</string>
+	<key>DTXcodeBuild</key>
+	<string>6D543f</string>
+	<key>IOKitPersonalities</key>
+	<dict/>
+	<key>OSBundleCompatibleVersion</key>
+	<string>1.0.0</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.driver.AppleHIDKeyboard</key>
+		<string>160.1</string>
+		<key>com.apple.driver.AppleUSBComposite</key>
+		<string>3.9.0</string>
+		<key>com.apple.driver.AppleUSBHIDKeyboard</key>
+		<string>160.1</string>
+		<key>com.apple.iokit.IOHIDFamily</key>
+		<string>1.4</string>
+		<key>com.apple.iokit.IOHIDSystem</key>
+		<string>1.2.1</string>
+		<key>com.apple.iokit.IOUSBHIDDriver</key>
+		<string>1.9</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>10.0.0d2</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>10.0.0d2</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Console</string>
+</dict>
+</plist>

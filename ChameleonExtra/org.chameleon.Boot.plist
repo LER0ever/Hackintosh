@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EthernetBuiltIn</key>
+	<string>Yes</string>
+	<key>GraphicsEnabler</key>
+	<string>Yes</string>
+	<key>IntelAzulFB</key>
+	<string>12</string>
+	<key>Kernel</key>
+	<string>/System/Library/Kernels/kernel</string>
+	<key>Kernel Flags</key>
+	<string>-f kext-dev-mode=1 darkwake=0 dart=0</string>
+	<key>Timeout</key>
+	<string>5</string>
+	<key>USBBusFix</key>
+	<string>Yes</string>
+</dict>
+</plist>
