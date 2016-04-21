@@ -13,12 +13,16 @@ Notice:
  - AMD CPU Users usually have little luck on Hackintosh
  - **DSDT injection may not work on a different hardware**, so use with caution.
  - Even if your laptop is exactly same as mine, you are still likely to fail on boot.
+ - The HD4400 driver works **only on 10.10.5**
  - This repo is large, so **'Download ZIP' is recommended.**
  - Hackintosh is just a technical proof of my understanding of OS X and Unix, and
  - **I will not take any responsibility for any loss or damage caused by this collection.**
-  
+ 
+### Some Screenshots
+![01](https://raw.githubusercontent.com/LER0ever/Hackintosh/master/Screenshots/01.png)
+![02](https://raw.githubusercontent.com/LER0ever/Hackintosh/master/Screenshots/02.png)
+![03](https://raw.githubusercontent.com/LER0ever/Hackintosh/master/Screenshots/03.png)
 
 # Enjoy Hackintosh!  
 
-### Some Screenshots
 
