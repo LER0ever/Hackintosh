@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ACPI</key>
+    <dict>
+      <key>DSDT</key>
+      <dict>
+        <key>Debug</key>
+        <false />
+        <key>DropOEM_DSM</key>
+        <false />
+        <key>Fixes</key>
+        <dict>
+          <key>NewWay_80000000</key>
+          <true />
+        </dict>
+        <key>Patches</key>
+        <array>
+          <dict>
+            <key>Comment</key>
+            <string>change _OSI to XOSI</string>
+            <key>Disabled</key>
+            <true />
+            <key>Find</key>
+            <data>X09TSQ==</data>
+            <key>Replace</key>
+            <data>WE9TSQ==</data>
+          </dict>
+          <dict>
+            <key>Comment</key>
+            <string>change EHC1 to EH01</string>
+            <key>Disabled</key>
+            <false />
+            <key>Find</key>
+            <data>RUhDMQ==</data>
+            <key>Replace</key>
+            <data>RUgwMQ==</data>
+          </dict>
+          <dict>
+            <key>Comment</key>
+            <string>change EHC2 to EH02</string>
+            <key>Disabled</key>
+            <false />
+            <key>Find</key>
+            <data>RUhDMg==</data>
+            <key>Replace</key>
+            <data>RUgwMg==</data>
+          </dict>
+          <dict>
+            <key>Comment</key>
+            <string>change HDAS to HDEF</string>
+            <key>Disabled</key>
+            <false />
+            <key>Find</key>
+            <data>SERBUw==</data>
+            <key>Replace</key>
+            <data>SERFRg==</data>
+          </dict>
+          <dict>
+            <key>Comment</key>
+            <string>change HECI to IMEI</string>
+            <key>Disabled</key>
+            <true />
+            <key>Find</key>
+            <data>SEVDSQ==</data>
+            <key>Replace</key>
+            <data>SU1FSQ==</data>
+          </dict>
+          <dict>
+            <key>Comment</key>
+            <string>change MEI to IMEI</string>
+            <key>Disabled</key>
+            <true />
+            <key>Find</key>
+            <data>TUVJXw==</data>
+            <key>Replace</key>
+            <data>SU1FSQ==</data>
+          </dict>
+          <dict>
+            <key>Comment</key>
+            <string>change GFX0 to IGPU</string>
+            <key>Disabled</key>
+            <false />
+            <key>Find</key>
+            <data>R0ZYMA==</data>
+            <key>Replace</key>
+            <data>SUdQVQ==</data>
+          </dict>
+        </array>
+        <key>ReuseFFFF</key>
+        <false />
+      </dict>
+      <key>DropTables</key>
+      <array>
+        <dict>
+          <key>Signature</key>
+          <string>#MCFG</string>
+        </dict>
+        <dict>
+          <key>Signature</key>
+          <string>DMAR</string>
+        </dict>
+      </array>
+      <key>SSDT</key>
+      <dict>
+        <key>DropOem</key>
+        <true />
+        <key>Generate</key>
+        <false />
+        <key>PluginType</key>
+        <integer>1</integer>
+      </dict>
+      <key>SortedOrder</key>
+      <array>
+        <string>DSDT.aml</string>
+        <string>SSDT.aml</string>
+        <string>SSDT-0.aml</string>
+        <string>SSDT-1.aml</string>
+        <string>SSDT-2.aml</string>
+        <string>SSDT-3.aml</string>
+        <string>SSDT-4.aml</string>
+        <string>SSDT-5.aml</string>
+        <string>SSDT-6.aml</string>
+        <string>SSDT-7.aml</string>
+        <string>SSDT-8.aml</string>
+        <string>SSDT-9.aml</string>
+        <string>SSDT-10.aml</string>
+        <string>SSDT-11.aml</string>
+        <string>SSDT-12.aml</string>
+        <string>SSDT-13.aml</string>
+        <string>SSDT-14.aml</string>
+        <string>SSDT-15.aml</string>
+        <string>SSDT-16.aml</string>
+        <string>SSDT-17.aml</string>
+        <string>SSDT-18.aml</string>
+        <string>SSDT-19.aml</string>
+        <string>SSDT-XOSI.aml</string>
+        <string>SSDT-LPC.aml</string>
+      </array>
+    </dict>
+    <key>Boot</key>
+    <dict>
+      <key>Arguments</key>
+      <string>-v dart=0 nv_disable=1 kext-dev-mode=1</string>
+      <key>Debug</key>
+      <false />
+      <key>DefaultVolume</key>
+      <string>Manjaro</string>
+      <key>Legacy</key>
+      <string>LegacyBiosDefault</string>
+      <key>Secure</key>
+      <false />
+      <key>Timeout</key>
+      <integer>3</integer>
+      <key>XMPDetection</key>
+      <string>Yes</string>
+    </dict>
+    <key>CPU</key>
+    <dict>
+      <key>C2</key>
+      <true />
+      <key>C4</key>
+      <true />
+      <key>C6</key>
+      <true />
+      <key>TurboDisable</key>
+      <true />
+      <key>UseARTFrequency</key>
+      <false />
+    </dict>
+    <key>Devices</key>
+    <dict>
+      <key>AddProperties</key>
+      <array>
+        <dict>
+          <key>Device</key>
+          <string>IntelGFX</string>
+          <key>Disabled</key>
+          <false />
+          <key>Key</key>
+          <string>AAPL,GfxYTile</string>
+          <key>Value</key>
+          <data>AQAAAA==</data>
+        </dict>
+      </array>
+      <key>Audio</key>
+      <dict>
+        <key>Inject</key>
+        <string>3</string>
+      </dict>
+      <key>USB</key>
+      <dict>
+        <key>AddClockID</key>
+        <true />
+        <key>FixOwnership</key>
+        <true />
+        <key>Inject</key>
+        <true />
+      </dict>
+      <key>UseIntelHDMI</key>
+      <true />
+    </dict>
+    <key>GUI</key>
+    <dict>
+      <key>CustomIcons</key>
+      <true />
+      <key>Custom</key>
+      <dict>
+        <key>Entries</key>
+        <array>
+          <dict>
+            <key>FullTitle</key>
+            <string>Windows 10</string>
+            <key>Disabled</key>
+            <false />
+            <key>ImageData</key>
+            <data>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</data>
+            <key>Ignore</key>
+            <false />
+            <key>Path</key>
+            <string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+            <key>Title</key>
+            <string>Windows</string>
+            <key>Type</key>
+            <string>Windows</string>
+            <key>VolumeType</key>
+            <string>Internal</string>
+          </dict>
+          <dict>
+            <key>FullTitle</key>
+            <string>Manjaro</string>
+            <key>Path</key>
+            <string>\EFI\Manjaro\grubx64.efi</string>
+            <key>VolumnType</key>
+            <string>Internal</string>
+            <key>Disabled</key>
+            <false />
+            <key>ImageData</key>
+            <data>iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QMBAhMR5gvKPAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABqUlEQVR42u3dQUrDQACG0T+1oAj2FK5dKFmIoATEU+RALsUz5AKC+xwgFyjuPYFgl3oBhULDNG3eW3aRmSRfOkOhJAEAAAAA4MhVYx6s7tvTJIs5XLeh6b7/OP8qyVmhOWyGptv5IMuRJ/We5HHGD89lko9C46+SfO16kEWYNQEIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAATAAVke6sSHpqv2OX7dtxnj//m+AQ43QEsAAkAA2ARORN23V0nuS1y3oeleBDA9D0leC411FAFYAuwBEAACQAAIAAHs5twlnfHvAEPT3ZWaeN231dB0P27hTJcAN98eAAEgAKazCaz79jnJdYF5XwxNd+v2TSyAJDeZzytjLAEIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAANjC2K+NW+35fN6SrAuMc/LP559JngqMXyXZzLrcum8rzy8AAADA9n4BeH4py9jUQC4AAAAASUVORK5CYII=</data>
+            <key>DriveImageData</key>
+            <data>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</data>
+            <key>Hidden</key>
+            <false />
+            <key>Ignore</key>
+            <false />
+            <key>Type</key>
+            <string>Linux</string>
+          </dict>
+          <dict>
+            <key>FullTitle</key>
+            <string>AOSC OS 5</string>
+            <key>Path</key>
+            <string>\EFI\AOSC\grubx64.efi</string>
+            <key>Disabled</key>
+            <false />
+            <key>ImageData</key>
+            <data>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</data>
+            <key>DriveImageData</key>
+            <data>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</data>
+            <key>Hidden</key>
+            <false />
+            <key>Ignore</key>
+            <false />
+            <key>Type</key>
+            <string>Linux</string>
+            <key>VolumnType</key>
+            <string>Internal</string>
+          </dict>
+          <dict>
+            <key>FullTitle</key>
+            <string>UEFI internal</string>
+            <key>Hidden</key>
+            <string>Always</string>
+            <key>Type</key>
+            <string>Other</string>
+          </dict>
+        </array>
+      </dict>
+      <key>Hide</key>
+      <array>
+        <string>Time Machine</string>
+        <string>BOOTX64.EFI</string>
+      </array>
+      <key>Language</key>
+      <string>zh_CN:0</string>
+      <key>Mouse</key>
+      <dict>
+        <key>DoubleClick</key>
+        <integer>500</integer>
+        <key>Enabled</key>
+        <true />
+        <key>Mirror</key>
+        <false />
+        <key>Speed</key>
+        <integer>8</integer>
+      </dict>
+      <key>Scan</key>
+      <dict>
+        <key>Entries</key>
+        <true />
+        <key>Legacy</key>
+        <false />
+        <key>Linux</key>
+        <false />
+        <key>Tool</key>
+        <false />
+      </dict>
+      <key>Theme</key>
+      <string>ThinkPad</string>
+    </dict>
+    <key>Graphics</key>
+    <dict>
+      <key>DualLink</key>
+      <integer>1</integer>
+      <key>Inject</key>
+      <dict>
+        <key>ATI</key>
+        <false />
+        <key>Intel</key>
+        <true />
+        <key>NVidia</key>
+        <false />
+      </dict>
+      <key>NvidiaSingle</key>
+      <false />
+      <key>ig-platform-id</key>
+      <string>0x193b0000</string>
+    </dict>
+    <key>KernelAndKextPatches</key>
+    <dict>
+      <key>AppleRTC</key>
+      <true />
+      <key>AsusAICPUPM</key>
+      <true />
+      <key>Debug</key>
+      <false />
+      <key>DellSMBIOSPatch</key>
+      <false />
+      <key>KernelCpu</key>
+      <false />
+      <key>KernelHaswellE</key>
+      <false />
+      <key>KernelLapic</key>
+      <true />
+      <key>KernelPm</key>
+      <true />
+      <key>KextsToPatch</key>
+      <array>
+        <dict>
+          <key>Comment</key>
+          <string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>AQAAdRc=</data>
+          <key>Name</key>
+          <string>IOGraphicsFamily</string>
+          <key>Replace</key>
+          <data>AQAA6xc=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>RiV1VCUwNHgA</data>
+          <key>Name</key>
+          <string>com.apple.driver.AppleBacklight</string>
+          <key>Replace</key>
+          <data>RiV1VHh4eHgA</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Mac-189A3D4F975D5FFC</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>TWFjLTAwQkU2RUQ3MUUzNUVCODY=</data>
+          <key>Name</key>
+          <string>AirPortBrcm4360</string>
+          <key>Replace</key>
+          <data>TWFjLTE4OUEzRDRGOTc1RDVGRkM=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Airpot-Extreme</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>axAAAHUN</data>
+          <key>Name</key>
+          <string>AirPortBrcm4360</string>
+          <key>Replace</key>
+          <data>axAAAJCQ</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>pci error 2</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>QQ+3zTnBdQw=</data>
+          <key>Name</key>
+          <string>AirPortBrcm4360</string>
+          <key>Replace</key>
+          <data>QQ+3zTnBZpA=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>AirPortBrcm4360 - fcvo</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>gflSqgAAdSk=</data>
+          <key>Name</key>
+          <string>AirPortBrcm4360</string>
+          <key>Replace</key>
+          <data>gflSqgAAZpA=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>pci error 3</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>g33EBHQG</data>
+          <key>Name</key>
+          <string>AirPortBrcm4360</string>
+          <key>Replace</key>
+          <data>g33EBGaQ</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>pci error 1</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>QTnEdRs=</data>
+          <key>Name</key>
+          <string>AirPortBrcm4360</string>
+          <key>Replace</key>
+          <data>QTnEZpA=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>10.11.4+-SKL-1912000-4_displays</string>
+          <key>Disabled</key>
+          <true />
+          <key>Find</key>
+          <data>AQMDAw==</data>
+          <key>Name</key>
+          <string>AppleIntelSKLGraphicsFramebuffer</string>
+          <key>Replace</key>
+          <data>AQMEAw==</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>10.11.4-SKL-1912000-Port_0x7-DP2HDM</string>
+          <key>Disabled</key>
+          <true />
+          <key>Find</key>
+          <data>AwYKAAAEAACHAQAA</data>
+          <key>Name</key>
+          <string>AppleIntelSKLGraphicsFramebuffer</string>
+          <key>Replace</key>
+          <data>AwYKAAAIAACHAQAA</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>10.11.4-SKL-1912000-Port_0x6-DP2HDM</string>
+          <key>Disabled</key>
+          <true />
+          <key>Find</key>
+          <data>AgQKAAAEAACHAQAA</data>
+          <key>Name</key>
+          <string>AppleIntelSKLGraphicsFramebuffer</string>
+          <key>Replace</key>
+          <data>AAAJAAAEAACHAQAA</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>eDP, port 0000, 0x191e0000, 0x19160000, 0x19260000, 0x19270000, 0x191b0000, 0x19160002, 0x19260002, 0x191e0003, 0x19260004, 0x19270004, 0x193b0005 credit syscl</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>AAAIAAIAAACYAAAAAQUJAAAEAAA=</data>
+          <key>Name</key>
+          <string>AppleIntelSKLGraphicsFramebuffer</string>
+          <key>Replace</key>
+          <data>AAAIAAAEAACYAAAAAQUJAAAEAAA=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 ( (based on Austere.J patch)</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>iUXIOcZ2UQ==</data>
+          <key>MatchOS</key>
+          <string>10.12.x</string>
+          <key>Name</key>
+          <string>AppleIntelSKLGraphicsFramebuffer</string>
+          <key>Replace</key>
+          <data>iUXIOcbrUQ==</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>10.11.4-SKL-1912000-Port_0x5-DP2HDM</string>
+          <key>Disabled</key>
+          <true />
+          <key>Find</key>
+          <data>AQUJAAAEAACHAQAA</data>
+          <key>Name</key>
+          <string>AppleIntelSKLGraphicsFramebuffer</string>
+          <key>Replace</key>
+          <data>AAAKAAAEAACHAQAA</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>change 15 port limit to 26 in XHCI kext (100-series)</string>
+          <key>Disabled</key>
+          <true />
+          <key>Find</key>
+          <data>g710////EA==</data>
+          <key>MatchOS</key>
+          <string>10.12.x</string>
+          <key>Name</key>
+          <string>AppleUSBXHCIPCI</string>
+          <key>Replace</key>
+          <data>g710////Gw==</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Enable TRIM for SSD</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>AEFQUExFIFNTRAA=</data>
+          <key>Name</key>
+          <string>IOAHCIBlockStorage</string>
+          <key>Replace</key>
+          <data>AAAAAAAAAAAAAAA=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Second Stage patch</string>
+          <key>Disabled</key>
+          <true />
+          <key>Find</key>
+          <data>hcB0a0g=</data>
+          <key>Name</key>
+          <string>IOGraphicsFamily</string>
+          <key>Replace</key>
+          <data>McB0W0g=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Second Stage patch</string>
+          <key>Disabled</key>
+          <true />
+          <key>Find</key>
+          <data>QYjE6xE=</data>
+          <key>Name</key>
+          <string>IOGraphicsFamily</string>
+          <key>Replace</key>
+          <data>QYjE6zE=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>AQAAdRc=</data>
+          <key>Name</key>
+          <string>IOGraphicsFamily</string>
+          <key>Replace</key>
+          <data>AQAA6xc=</data>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>Boot graphics glitch, 10.12.dp1 (credit denskop)</string>
+          <key>Disabled</key>
+          <false />
+          <key>Find</key>
+          <data>AQAAdSU=</data>
+          <key>Name</key>
+          <string>IOGraphicsFamily</string>
+          <key>Replace</key>
+          <data>AQAA6yU=</data>
+        </dict>
+      </array>
+    </dict>
+    <key>RtVariables</key>
+    <dict>
+      <key>BooterConfig</key>
+      <string>0x28</string>
+      <key>CsrActiveConfig</key>
+      <string>0x67</string>
+    </dict>
+    <key>SMBIOS</key>
+    <dict>
+      <key>BiosReleaseDate</key>
+      <string>12/22/2016</string>
+      <key>BiosVendor</key>
+      <string>Apple Inc.</string>
+      <key>BiosVersion</key>
+      <string>MBP133.88Z.0226.B11.1612220123</string>
+      <key>Board-ID</key>
+      <string>Mac-189A3D4F975D5FFC</string>
+      <key>BoardManufacturer</key>
+      <string>Apple Inc.</string>
+      <key>BoardType</key>
+      <integer>10</integer>
+      <key>ChassisAssetTag</key>
+      <string>MacBook-Aluminum</string>
+      <key>ChassisManufacturer</key>
+      <string>Apple Inc.</string>
+      <key>ChassisType</key>
+      <string>0x08</string>
+      <key>Family</key>
+      <string>MacBook Pro</string>
+      <key>LocationInChassis</key>
+      <string>Part Component</string>
+      <key>Manufacturer</key>
+      <string>Apple Inc.</string>
+      <key>Mobile</key>
+      <true />
+      <key>ProductName</key>
+      <string>MacBookPro13,3</string>
+      <key>SerialNumber</key>
+      <string>C02SLHACGTFN</string>
+      <key>Trust</key>
+      <false />
+      <key>Version</key>
+      <string>1.0</string>
+    </dict>
+    <key>SystemParameters</key>
+    <dict>
+      <key>InjectKexts</key>
+      <string>Detect</string>
+      <key>InjectSystemID</key>
+      <true />
+    </dict>
+  </dict>
+</plist>
