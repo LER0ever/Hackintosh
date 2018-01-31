@@ -26,7 +26,7 @@
 - Intel HD4400
 - Nvidia 820m (no driver)
 
-If your PC hardware is similar to mine, you can try this entire collecion. But you maystill need some tweaks to make it work for you.  
+If your PC hardware is similar to mine, you can try this entire collecion. But you may still need some tweaks to make it work for you.  
 
 ### The drivers in this repo have all been customized! If there is a same file in S/L/E, REPLACE it!  
 
@@ -39,7 +39,7 @@ If your PC hardware is similar to mine, you can try this entire collecion. But y
  - The HD530 Driver works **only on 10.12.4**
  - This repo is large, so **'Download ZIP' is recommended.**
  - Hackintosh is just a technical proof of my understanding of macOS and Unix, and
- - **I will not take any responsibility for any loss or damage caused by this collection.**
+ - **I will not take any responsibility for any data loss or hardware damage caused by this collection.**
 
 ![03](https://i.imgur.com/JlHl7QK.png)
 
