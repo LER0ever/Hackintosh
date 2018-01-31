@@ -35,8 +35,7 @@ If your PC hardware is similar to mine, you can try this entire collecion. But y
  - AMD CPU Users usually have little luck on Hackintosh
  - **DSDT injection may not work on a different hardware**, please use with caution
  - Even if your laptop is exactly same as mine, you are still likely to fail on boot.
- - The HD4400 driver works **only on 10.10.5**
- - The HD530 Driver works **only on 10.12.4**
+ - You need to download Nvidia Web Driver from nvidia if you are using dedicated graphics card.
  - This repo is large, so **'Download ZIP' is recommended.**
  - Hackintosh is just a technical proof of my understanding of macOS and Unix, and
  - **I will not take any responsibility for any data loss or hardware damage caused by this collection.**
