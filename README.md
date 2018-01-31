@@ -8,7 +8,9 @@
 - 16 GB DDR4 RAM (2*8)
 - Gigabyte Z270M-D3H Motherboard
 - Nvidia GTX 1050 Ti (Nvidia Web Driver)
+- LG 4k (3840x2160) Monitor
 - Cryorig CPU Cooling Fan
+- Windows, Linux, macOS triple boot using CLOVER
 
 ##### Screenshots
 ![01](https://i.imgur.com/SzjM91P.jpg)
